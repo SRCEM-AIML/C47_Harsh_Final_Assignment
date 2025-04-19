@@ -10,5 +10,5 @@ def home(request):
         if form.is_valid():
             form.save()
             return redirect('home')
-    return render(request, 'home.html', {'form': form, 'items': items})
+    return render(request, 'items/home.html', {'form': form, 'items': items})
 
